@@ -90,8 +90,7 @@ public class UserJPAResource {
 			
 		}	
 		User user = userOptional.get();
-		post.setUser(user);
-		
+		post.setUser(user);		
 		  postRepository.save(post);
 		  
 		  UriComponents location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
